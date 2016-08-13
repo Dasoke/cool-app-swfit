@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageViewLogo: UIImageView!
+    @IBOutlet weak var imageViewBG: UIImageView!
+    @IBOutlet weak var buttonFlip: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +25,11 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func flipButtonPressed(sender: AnyObject){
+        
+        imageViewLogo.hidden = false;
+        imageViewBG.hidden = false;
+        buttonFlip.hidden = true;
+    }
 }
 
